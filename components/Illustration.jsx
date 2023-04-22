@@ -30,6 +30,7 @@ const Illustration = ({ avatar }) => {
                 src={avatar ? img : header}
                 className=' rounded-t-[150px] rounded-b-[50px] w-[160px] h-[206px] sm:w-[285px] sm:h-[348px] object-cover object-right shadow-custom -mt-[210px] ml-4 sm:-mt-[360px] sm:ml-20'
                 ref={tiltRef} alt='Curious Homepage Image'
+                priority
             />
         </div>
 

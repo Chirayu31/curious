@@ -31,7 +31,7 @@ const Typography = ({ count }) => {
     return (
         <div className='grid col-span-2 grid-rows-2 items-center justify-center sm:mt-20 lg:mr-20  sm:px-10'>
             <div className='typo'>
-                <h1 className='font-medium max-md:text-center text-2xl sm:text-4xl xl:text-5xl lg:text-5xl px-2'>
+                <h1 className='font-medium max-md:text-center text-2xl sm:text-4xl xl:text-5xl lg:text-5xl px-2' data-aos="fade-in">
                     Curiosity is one of the great secrets of happiness.
                 </h1>
             </div>
@@ -47,7 +47,7 @@ const Typography = ({ count }) => {
                     </p>
                 </div>
 
-                <div className=' border border-black max-md:w-1/2 lg:mr-8'>
+                <div className=' border border-black lg:mr-8'>
                     {/* middle line */}
                 </div>
 

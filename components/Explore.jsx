@@ -1,6 +1,6 @@
 "use client";
 import React, { useState } from 'react'
-import ExplorePostPreview from './ExplorePostPreview';
+import PostCard from './PostCard';
 
 const Explore = ({ postMetaData }) => {
 
@@ -9,7 +9,7 @@ const Explore = ({ postMetaData }) => {
     const postPreviews = postMetaData
         .filter(post => post.title.toLowerCase().includes(query.toLowerCase()) === true)
         .map(post => (
-            <ExplorePostPreview key={post.slug} {...post} />
+            <PostCard key={post.slug} {...post} />
         ))
 
 
@@ -19,7 +19,7 @@ const Explore = ({ postMetaData }) => {
                 <input type="text" className='w-5/6 max-w-[500px] h-10 px-2 bg-transparent outline-none text-lg sm:text-xl border-b-2' name="search" required placeholder='Search here ...' onChange={e => setQuery(e.target.value)} autoComplete="off" />
             </div>
 
-            <div className='w-full grid grid-cols-1 mt-12 justify-items-center'>
+            <div className=' grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 lg:gap-12 sm:mx-10 mt-12 mb-12'>
                 {postPreviews}
             </div>
         </div>

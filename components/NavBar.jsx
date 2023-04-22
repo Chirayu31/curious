@@ -18,7 +18,7 @@ const NavBar = () => {
                         Explore
                     </p>
                 </Link>
-                <Link href='/about'>
+                <Link href='https://github.com/Chirayu31'>
                     <p className=" sm:px-8 md:px-10 lg:px-16 font-medium text-sm sm:text-lg xl:text-2xl lg:text-xl">
                         About Me
                     </p>

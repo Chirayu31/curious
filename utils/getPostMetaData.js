@@ -17,6 +17,8 @@ const getPostMetaData = () => {
         }
     })
 
+    posts.sort((a, b) => new Date(b.date) - new Date(a.date))
+
     return posts
 }
 export default getPostMetaData
