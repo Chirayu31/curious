@@ -7,7 +7,7 @@ const Explore = ({ postMetaData }) => {
     const [query, setQuery] = useState('')
 
     const postPreviews = postMetaData
-        .filter(post => post.title.toLowerCase().includes(query.toLowerCase()) === true)
+        .filter(post => post.title && post.title.toLowerCase().includes(query.toLowerCase()) === true)
         .map(post => (
             <PostCard key={post.slug} {...post} />
         ))
